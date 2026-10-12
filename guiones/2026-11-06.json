@@ -1,0 +1,46 @@
+{
+ "tema": "Historia",
+ "musica": "corporativa",
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Contenedores Marta: *30 obras* al mes",
+   "texto": "Y ni un papel en la oficina",
+   "etiqueta": "CONTENEDORES"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "dei_lista",
+   "titulo": "Cada obra, su *carpeta*",
+   "texto": "Lo encuentra en segundos"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "dei_formulario",
+   "titulo": "Sus conductores hacen el *DeI*",
+   "texto": "Desde el móvil, en la obra"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_lista",
+   "titulo": "Y las cartas de porte, *también*",
+   "texto": "Todo en la misma app"
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Lo que cambió *Marta*",
+   "puntos": [
+    "Adiós archivadores",
+    "Nada se pierde",
+    "Más tiempo para crecer"
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Pack DeI + DeCA · 21,99 €/mes + IVA"
+  }
+ ],
+ "caption": "Marta lleva 30 obras al mes y ni un papel en la oficina 🏗️\n\nSus conductores hacen el DeI y la carta de porte desde el móvil, en la propia obra. Cada cliente tiene su carpeta y todo está en la nube con copia diaria.\n\nPack DeI + DeCA: 21,99 €/mes + IVA.\n15 días gratis, sin tarjeta → mitalonario.es\n\n#contenedores #residuos #cartadeporte #construccion #pymes"
+}

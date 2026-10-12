@@ -1,0 +1,46 @@
+{
+ "tema": "DeCA",
+ "musica": "energica",
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "*401 €* de multa por un papel",
+   "texto": "La carta de porte ya es *digital*",
+   "etiqueta": "TRANSPORTISTAS"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_formulario",
+   "titulo": "Paso 1: *origen y destino*"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_documento",
+   "titulo": "Paso 2: PDF con *QR*",
+   "texto": "Al instante, sin imprimir"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "verificacion_qr",
+   "titulo": "Paso 3: lo *enseñas* en el control",
+   "texto": "Sin login ni contraseñas"
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Cumples con la *Orden FOM*",
+   "puntos": [
+    "Desde el móvil",
+    "Histórico por QR 7 días",
+    "Documentos ilimitados",
+    "Sin permanencia"
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Cartas de Porte · 14,99 €/mes + IVA"
+  }
+ ],
+ "caption": "401 € de multa por un papel 😬\n\nDesde el 5/10/2026 la carta de porte tiene que ser digital en el transporte público de mercancías. Con Talonario son 3 pasos: rellenas origen y destino, generas el PDF con QR y lo enseñas en el control.\n\nCartas de Porte: 14,99 €/mes + IVA.\n15 días gratis, sin tarjeta → mitalonario.es\n\n#DeCA #cartadeporte #transporte #camioneros #autonomos"
+}

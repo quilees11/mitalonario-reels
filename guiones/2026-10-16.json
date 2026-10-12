@@ -1,0 +1,41 @@
+{
+ "tema": "Oferta pack",
+ "musica": "corporativa",
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Residuos y cartas de porte, *una sola app*",
+   "texto": "DeI + DeCA en el móvil",
+   "etiqueta": "AUTÓNOMOS"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_lista",
+   "titulo": "Tus *cartas de porte*",
+   "texto": "Numeradas y siempre a mano"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "dei_lista",
+   "titulo": "Tus *DeI* por cliente",
+   "texto": "Con sus códigos LER"
+  },
+  {
+   "tipo": "lista",
+   "titulo": "El *pack* incluye",
+   "puntos": [
+    "DeI de residuos ilimitados",
+    "Cartas de porte ilimitadas",
+    "Verificación por QR",
+    "Más barato contratando 12 meses"
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Pack DeI + DeCA · 21,99 €/mes + IVA"
+  }
+ ],
+ "caption": "¿Haces traslados de residuos y transporte de mercancías? Las dos cosas en una sola app 📲\n\nCon el pack de Talonario tienes el DeI de residuos y la carta de porte digital, ilimitados y con QR. Y si contratas 12 meses, te sale más barato al mes.\n\nPack DeI + DeCA: 21,99 €/mes + IVA.\n15 días gratis, sin tarjeta → mitalonario.es\n\n#transporte #residuos #cartadeporte #contenedores #pymes"
+}

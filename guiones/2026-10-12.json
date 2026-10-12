@@ -1,0 +1,47 @@
+{
+ "tema": "DeCA",
+ "musica": "energica",
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "¿Sigues llevando la carta de porte en *papel*?",
+   "texto": "Desde el 5/10/2026 tiene que ser *digital*",
+   "etiqueta": "TRANSPORTISTAS"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_formulario",
+   "titulo": "Origen, destino y *mercancía*",
+   "texto": "Lo rellenas desde el móvil en un minuto"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_documento",
+   "titulo": "PDF oficial con *QR* al instante",
+   "texto": "Orden FOM/2861/2012"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "verificacion_qr",
+   "titulo": "En el control, enseñas el *QR*",
+   "texto": "Sin contraseñas. Documento íntegro."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Evita multas de *401 a 600 €*",
+   "puntos": [
+    "Todo en la nube",
+    "Documentos ilimitados",
+    "Histórico por QR 7 días",
+    "Sin permanencia"
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Cartas de Porte · 14,99 €/mes + IVA"
+  }
+ ],
+ "caption": "¿Sigues llevando la carta de porte en papel? 📄\n\nDesde el 5 de octubre tiene que ser digital, y la multa va de 401 a 600 €.\nCon Talonario la haces desde el móvil: origen, destino y mercancía, y tienes el PDF con QR al instante. En el control enseñas el QR, sin contraseñas.\n\nCartas de Porte: 14,99 €/mes + IVA.\n15 días gratis, sin tarjeta → mitalonario.es 🚛\n\n#cartadeporte #DeCA #transporte #transportistas #autonomos"
+}

@@ -1,0 +1,47 @@
+{
+ "tema": "DeI",
+ "musica": "optimista",
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "De la obra al vertedero *sin papeles*",
+   "texto": "El DeI del RD 553/2020, desde el móvil",
+   "etiqueta": "CONTENEDORES"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "dei_formulario",
+   "titulo": "Rellenas el *DeI* en un minuto",
+   "texto": "Productor, obra, gestor y código LER"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "dei_documento",
+   "titulo": "Documento oficial con *QR*",
+   "texto": "RD 553/2020"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "dei_lista",
+   "titulo": "Cada cliente, su *carpeta*",
+   "texto": "Todo ordenado y a mano"
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Lo que te *ahorras*",
+   "puntos": [
+    "Clientes y vertederos guardados",
+    "Códigos LER listos",
+    "Documentos ilimitados",
+    "Copias de seguridad diarias"
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Residuos (DeI) · 11,99 €/mes + IVA"
+  }
+ ],
+ "caption": "De la obra al vertedero sin papeles 🚧\n\nCon Talonario rellenas el DeI de residuos (RD 553/2020) desde el móvil: clientes, obras y vertederos guardados, y los códigos LER listos. Cada cliente con su carpeta y cada documento con su QR.\n\nResiduos (DeI): 11,99 €/mes + IVA.\n15 días gratis, sin tarjeta → mitalonario.es ♻️\n\n#residuos #rcd #contenedores #construccion #autonomos"
+}

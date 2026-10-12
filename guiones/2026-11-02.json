@@ -1,0 +1,46 @@
+{
+ "tema": "DeCA",
+ "musica": "energica",
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Carta de porte en *1 minuto*",
+   "texto": "Desde el móvil, antes de arrancar",
+   "etiqueta": "AUTÓNOMOS"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_formulario",
+   "titulo": "Rellenas los *datos*",
+   "texto": "Origen, destino y mercancía"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_documento",
+   "titulo": "Pulsas y tienes el *PDF*",
+   "texto": "Con su QR"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_lista",
+   "titulo": "Queda en tu *histórico*",
+   "texto": "CP-000001, CP-000002..."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Así de *fácil*",
+   "puntos": [
+    "Sin imprimir",
+    "Sin contraseñas en el control",
+    "Evitas multas de 401 a 600 €"
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Cartas de Porte · 14,99 €/mes + IVA"
+  }
+ ],
+ "caption": "Carta de porte en 1 minuto ⏱️\n\nRellenas origen, destino y mercancía, pulsas y tienes el PDF con QR. Queda numerada en tu histórico y en el control solo enseñas el QR. Así evitas multas de 401 a 600 €.\n\nCartas de Porte: 14,99 €/mes + IVA.\n15 días gratis, sin tarjeta → mitalonario.es\n\n#DeCA #cartadeporte #transportistas #autonomos #transporte"
+}

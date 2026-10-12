@@ -1,0 +1,44 @@
+{
+ "tema": "DeCA",
+ "musica": "energica",
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "¿Transporte público de *mercancías*?",
+   "texto": "La carta de porte digital es para ti",
+   "etiqueta": "TRANSPORTISTAS"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_formulario",
+   "titulo": "La haces desde el *móvil*"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "verificacion_qr",
+   "titulo": "Se verifica sin *login*",
+   "texto": "Solo escaneando el QR"
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_lista",
+   "titulo": "Tu histórico *ordenado*"
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Con *Talonario*",
+   "puntos": [
+    "Obligatoria desde el 5/10/2026",
+    "Multas de 401 a 600 €",
+    "Tú, cubierto desde el móvil"
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Cartas de Porte · 14,99 €/mes + IVA"
+  }
+ ],
+ "caption": "¿Haces transporte público de mercancías por carretera? Esto va contigo 🚛\n\nDesde el 5/10/2026 la carta de porte tiene que ser digital (multas de 401 a 600 €). Con Talonario la haces desde el móvil y se verifica con el QR, sin login.\n\nCartas de Porte: 14,99 €/mes + IVA.\n15 días gratis, sin tarjeta → mitalonario.es\n\n#cartadeporte #DeCA #transporte #transportistas #logistica"
+}
