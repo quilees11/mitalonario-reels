@@ -1,0 +1,46 @@
+name: Generar reels
+
+on:
+  push:
+    paths: ["guiones/**", "render.py"]
+  schedule:
+    - cron: "15 4 * * 1,3,5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reels
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q pillow numpy qrcode
+      - name: Renderizar guiones sin vídeo
+        run: |
+          mkdir -p reels
+          for g in guiones/*.json; do
+            d=$(basename "$g" .json)
+            if [ ! -f "reels/reel_$d.mp4" ]; then
+              echo "Renderizando $d"
+              (cd /tmp && python3 "$GITHUB_WORKSPACE/render.py" "$GITHUB_WORKSPACE/reels/reel_$d.mp4" "$GITHUB_WORKSPACE/$g")
+            fi
+          done
+      - name: Subir vídeos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reels
+          if git diff --cached --quiet; then echo "Nada nuevo"; exit 0; fi
+          git commit -m "Reels generados $(date -u +%F)"
+          git push
