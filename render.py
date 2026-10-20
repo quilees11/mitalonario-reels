@@ -2,7 +2,9 @@
 """Reel vertical 1080x1920 de Talonario con música sintetizada (libre de derechos).
 Requisitos: ffmpeg, pip install pillow numpy qrcode. Fuentes Inter en ./fonts (licencia OFL).
 Guion JSON: {"escenas":[{tipo:portada|pantalla|lista|cierre, titulo, texto?, etiqueta?, captura?, puntos?, precio?, duracion?}]}
-Capturas (maquetas): deca_formulario, deca_lista, deca_documento, dei_formulario, dei_lista, dei_documento, verificacion_qr."""
+Capturas (maquetas): deca_formulario, deca_lista, deca_documento, dei_formulario, dei_lista, dei_documento, verificacion_qr,
+fichajes_movil, fichajes_panel, fichajes_informe, boveda_lista, boveda_detalle, boveda_maestra, soporte_incidencias, soporte_seguridad.
+Cierre: {titulo, texto, precio?, web? (por defecto mitalonario.es; "" para ocultar), contacto?}."""
 import math, subprocess, sys, wave
 import numpy as np
 import qrcode
@@ -234,9 +236,137 @@ def scr_dei_pdf():
     d.text(((SW - f.getlength(t)) / 2, 1278), t, font=f, fill=(110, 122, 142))
     return im
 
+def scr_fich_movil():
+    im = Image.new("RGBA", (SW, SH), (238, 242, 248)); d = ImageDraw.Draw(im)
+    appbar(d, "Portal del empleado", SW)
+    d.rounded_rectangle((32, 250, SW - 32, 1250), radius=30, fill=CARD)
+    for t, f, c, y in [("Hola, Marta", font("Bold", 44), INK, 300), ("Martes, 21 de octubre", font("Medium", 30), (110, 122, 142), 362),
+                       ("08:02", font("Black", 150), INK, 440)]:
+        d.text(((SW - f.getlength(t)) / 2, y), t, font=f, fill=c)
+    cx = SW // 2
+    d.ellipse((cx - 170, 660, cx + 170, 1000), fill=GREEN)
+    for t, f, y in [("FICHAR", font("Black", 58), 770), ("ENTRADA", font("Bold", 34), 845)]:
+        d.text(((SW - f.getlength(t)) / 2, y), t, font=f, fill=WHITE)
+    for i, (a, b) in enumerate([("Hoy", "0 h 00 min"), ("Esta semana", "31 h 40 min")]):
+        y = 1060 + i * 70
+        d.text((80, y), a, font=font("Medium", 32), fill=(110, 122, 142))
+        f = font("Bold", 32); d.text((SW - 80 - f.getlength(b), y), b, font=f, fill=INK)
+    return im
+
+def scr_fich_panel():
+    im = Image.new("RGBA", (SW, SH), (238, 242, 248)); d = ImageDraw.Draw(im)
+    appbar(d, "Fichajes de hoy", SW)
+    rows = [("Marta G.", "08:02 → 16:05", "8 h 03", GREEN), ("Javier R.", "07:58 → 15:30", "7 h 32", GREEN),
+            ("Lucía P.", "09:00 → en curso", "4 h 10", ORANGE), ("Andrés M.", "08:15 → 14:00", "5 h 45", GREEN),
+            ("Sara L.", "Vacaciones", "—", (110, 122, 142)), ("Iván T.", "07:45 → 15:50", "8 h 05", GREEN)]
+    for i, (a, b, c, col) in enumerate(rows):
+        y = 250 + i * 170
+        d.rounded_rectangle((32, y, SW - 32, y + 150), radius=26, fill=CARD)
+        d.ellipse((60, y + 45, 120, y + 105), fill=col)
+        d.text((150, y + 26), a, font=font("Bold", 36), fill=INK)
+        d.text((150, y + 82), b, font=font("Medium", 28), fill=(110, 122, 142))
+        f = font("Bold", 34); d.text((SW - 64 - f.getlength(c), y + 54), c, font=f, fill=INK)
+    return im
+
+def scr_fich_informe():
+    im = Image.new("RGBA", (SW, SH), (90, 98, 112)); d = ImageDraw.Draw(im)
+    d.rectangle((40, 60, SW - 40, SH - 40), fill=WHITE)
+    d.text((80, 100), "REGISTRO DE JORNADA", font=font("Black", 40), fill=INK)
+    d.text((80, 152), "Octubre 2026 · Marta García", font=font("Medium", 28), fill=(100, 110, 130))
+    y = 240
+    for dia, e, s_, h in [("01/10", "08:01", "16:03", "8:02"), ("02/10", "07:59", "16:00", "8:01"), ("03/10", "08:05", "15:02", "6:57"),
+                          ("06/10", "08:00", "16:10", "8:10"), ("07/10", "08:02", "16:01", "7:59"), ("08/10", "07:57", "16:00", "8:03"),
+                          ("09/10", "08:03", "16:04", "8:01"), ("10/10", "08:00", "14:00", "6:00")]:
+        d.line((80, y, SW - 80, y), fill=LINE, width=2)
+        for x, t in [(80, dia), (250, e), (420, s_), (590, h)]:
+            d.text((x, y + 24), t, font=font("Medium", 32), fill=INK)
+        y += 100
+    d.rounded_rectangle((80, 1080, SW - 80, 1180), radius=22, fill=(225, 246, 234))
+    t = "Listo para la inspección"; f = font("Bold", 34)
+    d.text(((SW - f.getlength(t)) / 2, 1110), t, font=f, fill=GREEN)
+    return im
+
+def lock_icon(d, x, y, s, col):
+    d.rounded_rectangle((x, y + s * 0.45, x + s, y + s), radius=int(s * 0.12), fill=col)
+    d.arc((x + s * 0.2, y, x + s * 0.8, y + s * 0.8), 180, 360, fill=col, width=max(4, int(s * 0.12)))
+
+def scr_bov_lista():
+    im = Image.new("RGBA", (SW, SH), (238, 242, 248)); d = ImageDraw.Draw(im)
+    appbar(d, "Gestor de Contraseñas", SW)
+    rows = [("Banco · Empresa", "administracion@"), ("Agencia Tributaria", "certificado digital"), ("Correo corporativo", "info@"),
+            ("Proveedor de luz", "contratos@"), ("Redes sociales", "@miempresa"), ("Wifi oficina", "OFICINA_5G")]
+    for i, (a, b) in enumerate(rows):
+        y = 250 + i * 170
+        d.rounded_rectangle((32, y, SW - 32, y + 150), radius=26, fill=CARD)
+        lock_icon(d, 64, y + 45, 56, ORANGE)
+        d.text((150, y + 26), a, font=font("Bold", 36), fill=INK)
+        d.text((150, y + 82), b + "  ·  ••••••••••", font=font("Medium", 28), fill=(110, 122, 142))
+    return im
+
+def scr_bov_detalle():
+    im = Image.new("RGBA", (SW, SH), (238, 242, 248)); d = ImageDraw.Draw(im)
+    appbar(d, "Banco · Empresa", SW)
+    d.rounded_rectangle((32, 250, SW - 32, 1250), radius=30, fill=CARD)
+    field(d, 64, 290, SW - 128, "Usuario", "administracion@miempresa.es")
+    field(d, 64, 450, SW - 128, "Contraseña", "••••••••••••••")
+    field(d, 64, 610, SW - 128, "Web", "banca.ejemplo.es")
+    d.rounded_rectangle((64, 800, SW - 64, 895), radius=24, fill=ORANGE)
+    t = "Copiar contraseña"; f = font("Bold", 38)
+    d.text(((SW - f.getlength(t)) / 2, 822), t, font=f, fill=WHITE)
+    d.rounded_rectangle((64, 930, SW - 64, 1025), radius=24, outline=ORANGE, width=4)
+    t = "Compartir de forma segura"; f = font("Bold", 34)
+    d.text(((SW - f.getlength(t)) / 2, 956), t, font=f, fill=ORANGE)
+    lock_icon(d, SW // 2 - 30, 1080, 60, GREEN)
+    t = "Cifrado de extremo a extremo"; f = font("SemiBold", 28)
+    d.text(((SW - f.getlength(t)) / 2, 1160), t, font=f, fill=GREEN)
+    return im
+
+def scr_bov_maestra():
+    im = Image.new("RGBA", (SW, SH), (16, 30, 56)); d = ImageDraw.Draw(im)
+    lock_icon(d, SW // 2 - 90, 330, 180, ORANGE)
+    for t, f, c, y in [("Tu bóveda", font("Black", 64), WHITE, 590), ("Solo tú tienes la llave", font("Medium", 34), MUTED, 680)]:
+        d.text(((SW - f.getlength(t)) / 2, y), t, font=f, fill=c)
+    d.rounded_rectangle((64, 800, SW - 64, 900), radius=22, fill=(255, 255, 255, 30), outline=(255, 255, 255, 80), width=3)
+    d.text((100, 828), "Contraseña maestra  ••••••••", font=font("Medium", 34), fill=WHITE)
+    d.rounded_rectangle((64, 940, SW - 64, 1040), radius=24, fill=ORANGE)
+    t = "Desbloquear"; f = font("Bold", 38)
+    d.text(((SW - f.getlength(t)) / 2, 966), t, font=f, fill=WHITE)
+    return im
+
+def scr_sop_tickets():
+    im = Image.new("RGBA", (SW, SH), (238, 242, 248)); d = ImageDraw.Draw(im)
+    appbar(d, "Incidencias", SW)
+    rows = [("El correo no envía", "Resuelta en 25 min", GREEN), ("Impresora de recepción", "Resuelta en 40 min", GREEN),
+            ("Equipo nuevo", "Instalado y configurado", GREEN), ("Wifi lento en oficina", "En curso", ORANGE),
+            ("Accesos de un empleado", "Revocados", GREEN), ("Actualizaciones", "Al día", GREEN)]
+    for i, (a, b, col) in enumerate(rows):
+        y = 250 + i * 170
+        d.rounded_rectangle((32, y, SW - 32, y + 150), radius=26, fill=CARD)
+        d.ellipse((60, y + 45, 120, y + 105), fill=col)
+        d.text((150, y + 26), a, font=font("Bold", 36), fill=INK)
+        d.text((150, y + 82), b, font=font("Medium", 28), fill=(110, 122, 142))
+    return im
+
+def scr_sop_seguridad():
+    im = Image.new("RGBA", (SW, SH), (238, 242, 248)); d = ImageDraw.Draw(im)
+    appbar(d, "Revisión de seguridad", SW)
+    d.rounded_rectangle((32, 250, SW - 32, 1250), radius=30, fill=CARD)
+    cx = SW // 2
+    d.ellipse((cx - 110, 290, cx + 110, 510), fill=(225, 246, 234))
+    d.line([(cx - 52, 402), (cx - 12, 442), (cx + 60, 360)], fill=GREEN, width=22, joint="curve")
+    for i, t in enumerate(["Antivirus y cortafuegos", "Equipos actualizados", "Accesos y contraseñas", "Red wifi protegida", "Protección ransomware"]):
+        y = 580 + i * 120
+        d.line((80, y - 14, SW - 80, y - 14), fill=LINE, width=2)
+        d.text((80, y + 14), t, font=font("Medium", 34), fill=INK)
+        f = font("Bold", 34); d.text((SW - 80 - f.getlength("OK"), y + 14), "OK", font=f, fill=GREEN)
+    return im
+
 SCREENS = {"deca_formulario": scr_form, "deca_documento": scr_pdf, "verificacion_qr": scr_verif,
            "deca_lista": lambda: scr_list("deca"), "dei_lista": lambda: scr_list("dei"),
-           "dei_formulario": scr_dei_form, "dei_documento": scr_dei_pdf}
+           "dei_formulario": scr_dei_form, "dei_documento": scr_dei_pdf,
+           "fichajes_movil": scr_fich_movil, "fichajes_panel": scr_fich_panel, "fichajes_informe": scr_fich_informe,
+           "boveda_lista": scr_bov_lista, "boveda_detalle": scr_bov_detalle, "boveda_maestra": scr_bov_maestra,
+           "soporte_incidencias": scr_sop_tickets, "soporte_seguridad": scr_sop_seguridad}
 
 # ---------- escenas ----------
 def centered(im, y): return (W - im.width) // 2, y
@@ -282,7 +412,11 @@ def build(spec):
             els = [(c1, *centered(c1, 520), 0.0, "pop"), (c2, *centered(c2, 720), 0.3, "up")]
             if sc.get("precio"):
                 c3 = pill(sc["precio"], font("Bold", 44), INK, WHITE, padx=44, pady=22); els.append((c3, *centered(c3, 880), 0.6, "up"))
-            c4 = rich("mitalonario.es", font("Black", 96), 980, color=ORANGE); els.append((c4, *centered(c4, 1180), 0.9, "pop"))
+            web = sc.get("web", "mitalonario.es")
+            if web:
+                c4 = rich(web, font("Black", 96 if len(web) < 16 else 64), 980, color=ORANGE); els.append((c4, *centered(c4, 1120), 0.9, "pop"))
+            for j, linea in enumerate([x.strip() for x in sc.get("contacto", "").split("·") if x.strip()]):
+                c5 = rich(linea, font("SemiBold", 46), 980, color=WHITE); els.append((c5, *centered(c5, 1290 + j * 80), 1.2 + j * 0.2, "up"))
             add(sc.get("duracion", 4.4), els)
 
 import json
