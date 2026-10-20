@@ -1,0 +1,57 @@
+{
+ "tema": "Suite",
+ "modulo": "Talonario (suite)",
+ "musica": "energica",
+ "duracion": 25.2,
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Desde el *móvil*, en la nube",
+   "texto": "Tu oficina va contigo",
+   "etiqueta": "TALONARIO",
+   "duracion": 3.4
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "suite_inicio",
+   "titulo": "Una app, *todos tus módulos*",
+   "texto": "Elige los que necesites",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "dei_formulario",
+   "titulo": "Rellenas en *un minuto*",
+   "texto": "Todo guardado",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "boveda_lista",
+   "titulo": "Y tus claves, *seguras*",
+   "texto": "Cifradas",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Por qué *Talonario*",
+   "puntos": [
+    "Pagas solo lo que usas",
+    "Sin permanencia",
+    "Soporte directo del equipo que lo programa"
+   ],
+   "duracion": 4.8
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Módulos desde 11,99 €/mes + IVA",
+   "web": "mitalonario.es",
+   "contacto": "a.esteban@mitalonario.es · WhatsApp 676 60 11 34",
+   "duracion": 5.0
+  }
+ ],
+ "caption": "Tu oficina va contigo, en el móvil ☁️\n\nTalonario reúne en una sola app los documentos que te exige la normativa (DeI de residuos y cartas de porte con QR), el registro de jornada de tu equipo y un gestor de contraseñas cifrado. Desde el móvil, en la nube y sin permanencia.\n\n💶 Pagas solo los módulos que usas, desde 11,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#mitalonario #pymes #autonomos #transporte #contenedores #digitalizacion #software",
+ "generado": "automatico"
+}
