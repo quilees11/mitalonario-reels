@@ -20,16 +20,16 @@ CONTACTO_CAP = "📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34"
 PRECIO = {
  "DeI": "Residuos (DeI) · 11,99 €/mes + IVA",
  "DeCA": "Cartas de Porte · 14,99 €/mes + IVA",
- "Boveda": "Gestor de Contraseñas · 19,99 €/mes + IVA",
- "Fichajes": "Sistema de Fichajes · 19,99 €/mes + IVA",
+ "Boveda": "Gestor de Contraseñas · 14,99 €/mes + IVA",
+ "Fichajes": "Sistema de Fichajes · 14,99 €/mes + IVA",
  "Soporte": "Presupuesto a medida",
  "Suite": "Módulos desde 11,99 €/mes + IVA",
 }
 PRECIO_CAP = {
  "DeI": "💶 Residuos (DeI): 11,99 €/mes + IVA · 15 días gratis en mitalonario.es",
  "DeCA": "💶 Cartas de Porte: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es",
- "Boveda": "💶 Gestor de Contraseñas: 19,99 €/mes + IVA · 15 días gratis en mitalonario.es",
- "Fichajes": "💶 Sistema de Fichajes: 19,99 €/mes + IVA · 15 días gratis en mitalonario.es",
+ "Boveda": "💶 Gestor de Contraseñas: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es",
+ "Fichajes": "💶 Sistema de Fichajes: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es",
  "Soporte": "💶 Servicio a medida: te preparo un presupuesto sin compromiso.",
  "Suite": "💶 Pagas solo los módulos que usas, desde 11,99 €/mes + IVA · 15 días gratis en mitalonario.es",
 }
