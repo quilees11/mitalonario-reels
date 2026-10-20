@@ -1,0 +1,58 @@
+{
+ "tema": "DeI",
+ "modulo": "Residuos (DeI)",
+ "musica": "optimista",
+ "duracion": 25.2,
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "¿Otro DeI *a mano*?",
+   "texto": "Hazlo desde el móvil",
+   "etiqueta": "CONTENEDORES",
+   "duracion": 3.4
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "dei_formulario",
+   "titulo": "Rellenas el *DeI*",
+   "texto": "Productor, obra, gestor y LER",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "dei_documento",
+   "titulo": "Documento oficial con *QR*",
+   "texto": "RD 553/2020",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "dei_lista",
+   "titulo": "Guardado en su *carpeta*",
+   "texto": "Por cliente",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Lo que te *ahorras*",
+   "puntos": [
+    "Clientes y vertederos guardados",
+    "Códigos LER listos",
+    "Documentos ilimitados",
+    "Desde cualquier móvil"
+   ],
+   "duracion": 4.8
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Residuos (DeI) · 11,99 €/mes + IVA",
+   "web": "mitalonario.es",
+   "contacto": "a.esteban@mitalonario.es · WhatsApp 676 60 11 34",
+   "duracion": 5.0
+  }
+ ],
+ "caption": "¿Otro DeI a mano? ✍️\n\nCon Talonario rellenas el DeI de residuos (RD 553/2020) desde el móvil, con clientes, obras, vertederos y códigos LER ya guardados. Cada cliente con su carpeta y cada documento con su QR.\n\n💶 Residuos (DeI): 11,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#residuos #rcd #contenedores #construccion #gestionderesiduos #autonomos #mitalonario",
+ "generado": "automatico"
+}
