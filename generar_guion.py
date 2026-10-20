@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Genera guiones/AAAA-MM-DD.json para los próximos días que no tengan guion: UN reel diario.
-Rota cada día de módulo, en este orden: Residuos (DeI) · Cartas de Porte (DeCA) · Gestor de Contraseñas ·
-Sistema de Fichajes · Soporte Informático. Dentro de cada módulo rota ganchos, pantallas y ventajas
+Martes, sábado y domingo: reel de la suite Talonario (qué hace y sus ventajas, sin un módulo concreto).
+Lunes, miércoles, jueves y viernes: un módulo por día, rotando en este orden: Residuos (DeI) · Cartas de Porte (DeCA) ·
+Gestor de Contraseñas · Sistema de Fichajes · Soporte Informático. Dentro de cada módulo rota ganchos, pantallas y ventajas
 para no repetir. Duración fija de cada escena: 3,4 + 4,0 x 3 + 4,8 + 5,0 = 25,2 s (entre 23 y 27 s).
 No se promocionan la licencia de facturación "Talonario" ni las Copias de seguridad.
 Uso: python3 generar_guion.py [dias_adelante]"""
@@ -10,7 +11,8 @@ import datetime as dt, json, os, sys
 BASE = os.path.dirname(os.path.abspath(__file__))
 GDIR = os.path.join(BASE, "guiones")
 ORDEN = ["DeI", "DeCA", "Boveda", "Fichajes", "Soporte"]
-ORIGEN = dt.date(2026, 10, 21)          # 21/10/2026 = Residuos (DeI)
+ORIGEN = dt.date(2026, 10, 21)          # 21/10/2026 (miércoles) = Residuos (DeI)
+DIAS_SUITE = (1, 5, 6)                   # martes, sábado, domingo
 DUR = {"portada": 3.4, "pantalla": 4.0, "lista": 4.8, "cierre": 5.0}
 CONTACTO = "a.esteban@mitalonario.es · WhatsApp 676 60 11 34"
 CONTACTO_CAP = "📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34"
@@ -21,6 +23,7 @@ PRECIO = {
  "Boveda": "Gestor de Contraseñas · 19,99 €/mes + IVA",
  "Fichajes": "Sistema de Fichajes · 19,99 €/mes + IVA",
  "Soporte": "Presupuesto a medida",
+ "Suite": "Módulos desde 11,99 €/mes + IVA",
 }
 PRECIO_CAP = {
  "DeI": "💶 Residuos (DeI): 11,99 €/mes + IVA · 15 días gratis en mitalonario.es",
@@ -28,6 +31,7 @@ PRECIO_CAP = {
  "Boveda": "💶 Gestor de Contraseñas: 19,99 €/mes + IVA · 15 días gratis en mitalonario.es",
  "Fichajes": "💶 Sistema de Fichajes: 19,99 €/mes + IVA · 15 días gratis en mitalonario.es",
  "Soporte": "💶 Servicio a medida: te preparo un presupuesto sin compromiso.",
+ "Suite": "💶 Pagas solo los módulos que usas, desde 11,99 €/mes + IVA · 15 días gratis en mitalonario.es",
 }
 CIERRE = {  # titulo, texto, web
  "DeI": ("*15 días gratis*", "Sin tarjeta. Sin permanencia.", "mitalonario.es"),
@@ -35,6 +39,7 @@ CIERRE = {  # titulo, texto, web
  "Boveda": ("*15 días gratis*", "Sin tarjeta. Sin permanencia.", "mitalonario.es"),
  "Fichajes": ("*15 días gratis*", "Sin tarjeta. Sin permanencia.", "mitalonario.es"),
  "Soporte": ("*Hablemos*", "Valoración gratis y sin compromiso", ""),
+ "Suite": ("*15 días gratis*", "Sin tarjeta. Sin permanencia.", "mitalonario.es"),
 }
 
 # (titulo portada con *resaltado*, subtítulo, etiqueta, primera línea del caption)
@@ -71,6 +76,14 @@ HOOKS = {
   ("¿Cuántas horas hizo *cada uno*?", "Lo ves al momento", "PYMES", "¿Cuántas horas ha hecho cada uno este mes? Lo ves al momento ⏱️"),
   ("Trabajan *fuera de la oficina*", "Y fichan igual", "OBRAS · REPARTO", "¿Tu equipo trabaja en la calle o en obra? Fichan igual 🚐"),
  ],
+ "Suite": [
+  ("Tu empresa, en *una sola app*", "Documentos, equipo y seguridad", "TALONARIO", "Todo tu negocio en una sola app 📲"),
+  ("Menos *papeles*, más trabajo", "Talonario lo hace por ti", "AUTÓNOMOS · PYMES", "Menos papeles y más tiempo para trabajar 💪"),
+  ("¿Cuántas apps usas *para todo*?", "Con una te basta", "PYMES", "¿Cuántas aplicaciones usas para llevar tu negocio? 🤯"),
+  ("Hecho para *contenedores y transporte*", "Y para cualquier pyme", "TALONARIO", "Hecho para contenedores y transporte… y para cualquier pyme 🚛"),
+  ("Desde el *móvil*, en la nube", "Tu oficina va contigo", "TALONARIO", "Tu oficina va contigo, en el móvil ☁️"),
+  ("Pagas *solo lo que usas*", "Módulos a tu medida", "AUTÓNOMOS · PYMES", "Pagas solo los módulos que usas 🧩"),
+ ],
  "Soporte": [
   ("¿Sin *informático* en tu empresa?", "Yo me encargo", "SOPORTE INFORMÁTICO", "¿Tu empresa no tiene informático? Yo me encargo 💻"),
   ("El ordenador falla *a la peor hora*", "Y alguien lo arregla hoy", "PYMES", "Cuando el ordenador falla a la peor hora… 😩"),
@@ -101,6 +114,11 @@ SCREENS = {
   [("fichajes_panel", "¿Quién está *trabajando*?", "En tiempo real"), ("fichajes_movil", "Cada empleado, *su portal*", "Con su propio acceso"), ("fichajes_informe", "Informe *mensual*", "Por empleado")],
   [("fichajes_informe", "Todo *registrado*", "Día a día"), ("fichajes_movil", "Un toque y *fichado*", "Sin relojes"), ("fichajes_panel", "Horas de *cada uno*", "Sin hojas de firmas")],
  ],
+ "Suite": [
+  [("suite_inicio", "Todo en *un panel*", "Lo de hoy, de un vistazo"), ("deca_documento", "Documentos *oficiales*", "Con QR verificable"), ("fichajes_movil", "Tu equipo, *conectado*", "Fichan desde el móvil")],
+  [("suite_inicio", "Una app, *todos tus módulos*", "Elige los que necesites"), ("dei_formulario", "Rellenas en *un minuto*", "Todo guardado"), ("boveda_lista", "Y tus claves, *seguras*", "Cifradas")],
+  [("verificacion_qr", "Documentos *verificables*", "Con su QR, sin login"), ("suite_inicio", "Todo *ordenado*", "En la nube"), ("fichajes_panel", "Tu plantilla, *bajo control*", "En tiempo real")],
+ ],
  "Soporte": [
   [("soporte_incidencias", "Incidencias *resueltas*", "Remoto o presencial"), ("soporte_seguridad", "Tu seguridad, *revisada*", "Equipos, red y accesos"), ("soporte_incidencias", "Un solo *interlocutor*", "Para toda tu tecnología")],
   [("soporte_seguridad", "Protección frente a *ransomware*", "Antes de que pase"), ("soporte_incidencias", "Te lo arreglo *hoy*", "Sin esperas eternas"), ("soporte_seguridad", "Accesos y contraseñas *en orden*", "Cumpliendo el RGPD")],
@@ -119,6 +137,9 @@ LISTAS = {
  "Fichajes": [("Con el *Sistema de Fichajes*", ["Cumples el registro de jornada", "Fichaje desde el móvil", "Portal del empleado", "Sin permanencia"]),
               ("Se *acabó*", ["Hojas de firmas", "Relojes de fichar", "Cuentas de horas a mano"]),
               ("Para *tu plantilla*", ["Oficina, obra o reparto", "Informes por empleado", "Listo ante una inspección"])],
+ "Suite": [("Con *Talonario*", ["DeI y Cartas de Porte con QR", "Fichajes de tu plantilla", "Contraseñas cifradas", "Desde el móvil y en la nube"]),
+           ("Por qué *Talonario*", ["Pagas solo lo que usas", "Sin permanencia", "Soporte directo del equipo que lo programa"]),
+           ("Hecho *para ti*", ["Contenedores y transporte", "Autónomos y pymes", "Listo ante inspecciones"])],
  "Soporte": [("Te *ayudo* con", ["Soporte remoto y presencial", "Sistemas y ciberseguridad", "Consultoría IT", "Para autónomos y pymes"]),
              ("Sin *sustos*", ["Equipos y red al día", "Protección frente a ataques", "Un técnico de confianza"])],
 }
@@ -131,6 +152,8 @@ BENEFICIO = {
             "Deja de guardar claves en Excel, papel o el navegador. Copia y comparte contraseñas de forma segura, sin enviarlas por WhatsApp."],
  "Fichajes": ["El registro de jornada es obligatorio para cualquier empresa con empleados y no tenerlo puede acabar en multa de la Inspección de Trabajo. Con el Sistema de Fichajes de Talonario tu equipo ficha desde el móvil y tú lo controlas todo.",
               "Cada empleado tiene su propio portal para fichar entrada, pausas y salida. Tú ves las horas de toda la plantilla y sacas el registro mensual en un clic."],
+ "Suite": ["Talonario reúne en una sola app los documentos que te exige la normativa (DeI de residuos y cartas de porte con QR), el registro de jornada de tu equipo y un gestor de contraseñas cifrado. Desde el móvil, en la nube y sin permanencia.",
+           "Eliges solo los módulos que necesitas y lo tienes todo ordenado en un panel. Hecho para empresas de contenedores y transporte, y para cualquier autónomo o pyme que quiera menos papeles."],
  "Soporte": ["Soy Adrián Esteban y ayudo a autónomos y pymes con su tecnología: soporte remoto y presencial, administración de sistemas y ciberseguridad, y consultoría IT.",
              "Incidencias resueltas sin esperas, equipos y red al día, protección frente a ransomware y un técnico de confianza para todo lo que tenga que ver con informática."],
 }
@@ -143,19 +166,31 @@ TAGS = {
             "#contraseñas #ciberseguridad #empresas #proteccióndedatos #negocios #pymes #mitalonario"],
  "Fichajes": ["#registrodejornada #fichajes #controlhorario #rrhh #pymes #empresas #mitalonario",
               "#fichaje #registrohorario #inspecciondetrabajo #autonomos #pymes #recursoshumanos #mitalonario"],
+ "Suite": ["#mitalonario #pymes #autonomos #transporte #contenedores #digitalizacion #software",
+           "#mitalonario #digitalizacion #empresas #gestion #pymes #residuos #cartadeporte"],
  "Soporte": ["#soporteinformatico #informatica #ciberseguridad #pymes #autonomos #consultoriait #madrid",
              "#tecnico #informaticamadrid #ciberseguridad #ransomware #pymes #sistemas #madrid"],
 }
-MUSICA = {"DeI": "optimista", "DeCA": "energica", "Boveda": "corporativa", "Fichajes": "optimista", "Soporte": "corporativa"}
-NOMBRE = {"DeI": "Residuos (DeI)", "DeCA": "Cartas de Porte (DeCA)", "Boveda": "Gestor de Contraseñas", "Fichajes": "Sistema de Fichajes", "Soporte": "Soporte Informático"}
+MUSICA = {"Suite": "energica", "DeI": "optimista", "DeCA": "energica", "Boveda": "corporativa", "Fichajes": "optimista", "Soporte": "corporativa"}
+NOMBRE = {"DeI": "Residuos (DeI)", "DeCA": "Cartas de Porte (DeCA)", "Boveda": "Gestor de Contraseñas", "Fichajes": "Sistema de Fichajes", "Soporte": "Soporte Informático", "Suite": "Talonario (suite)"}
+
+
+def n_modulo(d):
+    """Cuántos días de módulo (no de suite) hay desde ORIGEN hasta d, sin contar d."""
+    return sum(1 for i in range((d - ORIGEN).days) if (ORIGEN + dt.timedelta(days=i)).weekday() not in DIAS_SUITE)
 
 
 def tema(d):
-    return ORDEN[(d - ORIGEN).days % len(ORDEN)]
+    if d.weekday() in DIAS_SUITE: return "Suite"
+    return ORDEN[n_modulo(d) % len(ORDEN)]
 
 
 def guion(d):
-    t = tema(d); k = (d - ORIGEN).days // len(ORDEN)   # vuelta número k para este módulo
+    t = tema(d)
+    if t == "Suite":
+        k = sum(1 for i in range((d - ORIGEN).days) if (ORIGEN + dt.timedelta(days=i)).weekday() in DIAS_SUITE)
+    else:
+        k = n_modulo(d) // len(ORDEN)   # vuelta número k para este módulo
     h = HOOKS[t][k % len(HOOKS[t])]
     scr = SCREENS[t][k % len(SCREENS[t])]
     lst = LISTAS[t][k % len(LISTAS[t])]

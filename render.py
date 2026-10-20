@@ -361,12 +361,30 @@ def scr_sop_seguridad():
         f = font("Bold", 34); d.text((SW - 80 - f.getlength("OK"), y + 14), "OK", font=f, fill=GREEN)
     return im
 
+def scr_suite():
+    im = Image.new("RGBA", (SW, SH), (238, 242, 248)); d = ImageDraw.Draw(im)
+    appbar(d, "Inicio", SW)
+    tiles = [("Residuos (DeI)", "12 este mes", (34, 170, 96)), ("Cartas de Porte", "48 este mes", (60, 120, 255)),
+             ("Fichajes", "6 empleados", (255, 122, 26)), ("Contraseñas", "24 guardadas", (150, 90, 220))]
+    for i, (a, b, col) in enumerate(tiles):
+        x = 32 + (i % 2) * ((SW - 96) // 2 + 32); y = 260 + (i // 2) * 330; w = (SW - 96) // 2
+        d.rounded_rectangle((x, y, x + w, y + 300), radius=30, fill=CARD)
+        d.ellipse((x + 30, y + 30, x + 120, y + 120), fill=col)
+        d.text((x + 30, y + 160), a, font=font("Bold", 32), fill=INK)
+        d.text((x + 30, y + 214), b, font=font("Medium", 26), fill=(110, 122, 142))
+    d.rounded_rectangle((32, 940, SW - 32, 1250), radius=30, fill=CARD)
+    d.text((64, 975), "Hoy", font=font("Bold", 36), fill=INK)
+    for i, t in enumerate(["CP-000148 generada · Getafe → Valencia", "DeI-0052 firmado · Obra Alcorcón", "Marta fichó la entrada · 08:02"]):
+        d.text((64, 1040 + i * 64), "•  " + t, font=font("Medium", 27), fill=INK)
+    return im
+
 SCREENS = {"deca_formulario": scr_form, "deca_documento": scr_pdf, "verificacion_qr": scr_verif,
            "deca_lista": lambda: scr_list("deca"), "dei_lista": lambda: scr_list("dei"),
            "dei_formulario": scr_dei_form, "dei_documento": scr_dei_pdf,
            "fichajes_movil": scr_fich_movil, "fichajes_panel": scr_fich_panel, "fichajes_informe": scr_fich_informe,
            "boveda_lista": scr_bov_lista, "boveda_detalle": scr_bov_detalle, "boveda_maestra": scr_bov_maestra,
-           "soporte_incidencias": scr_sop_tickets, "soporte_seguridad": scr_sop_seguridad}
+           "soporte_incidencias": scr_sop_tickets, "soporte_seguridad": scr_sop_seguridad,
+           "suite_inicio": scr_suite}
 
 # ---------- escenas ----------
 def centered(im, y): return (W - im.width) // 2, y
