@@ -1,0 +1,57 @@
+{
+ "tema": "Fichajes",
+ "modulo": "Sistema de Fichajes",
+ "musica": "optimista",
+ "duracion": 25.2,
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Inspección de trabajo: *¿estás listo?*",
+   "texto": "Que no te pille sin registro",
+   "etiqueta": "PYMES",
+   "duracion": 3.4
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "fichajes_panel",
+   "titulo": "¿Quién está *trabajando*?",
+   "texto": "En tiempo real",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "fichajes_movil",
+   "titulo": "Cada empleado, *su portal*",
+   "texto": "Con su propio acceso",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "fichajes_informe",
+   "titulo": "Informe *mensual*",
+   "texto": "Por empleado",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Se *acabó*",
+   "puntos": [
+    "Hojas de firmas",
+    "Relojes de fichar",
+    "Cuentas de horas a mano"
+   ],
+   "duracion": 4.8
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Sistema de Fichajes · 14,99 €/mes + IVA",
+   "web": "mitalonario.es",
+   "contacto": "a.esteban@mitalonario.es · WhatsApp 676 60 11 34",
+   "duracion": 5.0
+  }
+ ],
+ "caption": "Si mañana llega una inspección de trabajo… ¿tienes el registro de jornada? 👀\n\nCada empleado tiene su propio portal para fichar entrada, pausas y salida. Tú ves las horas de toda la plantilla y sacas el registro mensual en un clic.\n\n💶 Sistema de Fichajes: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#fichaje #registrohorario #inspecciondetrabajo #autonomos #pymes #recursoshumanos #mitalonario",
+ "generado": "automatico"
+}
