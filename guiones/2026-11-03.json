@@ -1,0 +1,57 @@
+{
+ "tema": "Suite",
+ "modulo": "Talonario (suite)",
+ "musica": "energica",
+ "duracion": 25.2,
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Pagas *solo lo que usas*",
+   "texto": "Módulos a tu medida",
+   "etiqueta": "AUTÓNOMOS · PYMES",
+   "duracion": 3.4
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "verificacion_qr",
+   "titulo": "Documentos *verificables*",
+   "texto": "Con su QR, sin login",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "suite_inicio",
+   "titulo": "Todo *ordenado*",
+   "texto": "En la nube",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "fichajes_panel",
+   "titulo": "Tu plantilla, *bajo control*",
+   "texto": "En tiempo real",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Hecho *para ti*",
+   "puntos": [
+    "Contenedores y transporte",
+    "Autónomos y pymes",
+    "Listo ante inspecciones"
+   ],
+   "duracion": 4.8
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Módulos desde 11,99 €/mes + IVA",
+   "web": "mitalonario.es",
+   "contacto": "",
+   "duracion": 5.0
+  }
+ ],
+ "caption": "Pagas solo los módulos que usas 🧩\n\nEliges solo los módulos que necesitas y lo tienes todo ordenado en un panel. Hecho para empresas de contenedores y transporte, y para cualquier autónomo o pyme que quiera menos papeles.\n\n💶 Pagas solo los módulos que usas, desde 11,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#mitalonario #digitalizacion #empresas #gestion #pymes #residuos #cartadeporte",
+ "generado": "automatico-v2"
+}

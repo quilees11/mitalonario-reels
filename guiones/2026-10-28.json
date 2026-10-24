@@ -1,0 +1,58 @@
+{
+ "tema": "Soporte",
+ "modulo": "Soporte Informático",
+ "musica": "corporativa",
+ "duracion": 25.2,
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "¿Sin *informático* en tu empresa?",
+   "texto": "Yo me encargo",
+   "etiqueta": "SOPORTE INFORMÁTICO",
+   "duracion": 3.4
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "soporte_incidencias",
+   "titulo": "Incidencias *resueltas*",
+   "texto": "Remoto o presencial",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "soporte_seguridad",
+   "titulo": "Tu seguridad, *revisada*",
+   "texto": "Equipos, red y accesos",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "soporte_incidencias",
+   "titulo": "Un solo *interlocutor*",
+   "texto": "Para toda tu tecnología",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Te *ayudo* con",
+   "puntos": [
+    "Soporte remoto y presencial",
+    "Sistemas y ciberseguridad",
+    "Consultoría IT",
+    "Para autónomos y pymes"
+   ],
+   "duracion": 4.8
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*Hablemos*",
+   "texto": "Valoración gratis y sin compromiso",
+   "precio": "Presupuesto a medida",
+   "web": "",
+   "contacto": "",
+   "duracion": 5.0
+  }
+ ],
+ "caption": "¿Tu empresa no tiene informático? Yo me encargo 💻\n\nSoy Adrián Esteban y ayudo a autónomos y pymes con su tecnología: soporte remoto y presencial, administración de sistemas y ciberseguridad, y consultoría IT.\n\n💶 Servicio a medida: te preparo un presupuesto sin compromiso.\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#soporteinformatico #informatica #ciberseguridad #pymes #autonomos #consultoriait #madrid",
+ "generado": "automatico-v2"
+}
