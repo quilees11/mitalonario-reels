@@ -198,12 +198,12 @@ def guion(d):
     esc = [{"tipo": "portada", "titulo": h[0], "texto": h[1], "etiqueta": h[2], "duracion": DUR["portada"]}]
     esc += [{"tipo": "pantalla", "captura": c, "titulo": a, "texto": b, "duracion": DUR["pantalla"]} for c, a, b in scr]
     esc += [{"tipo": "lista", "titulo": lst[0], "puntos": lst[1], "duracion": DUR["lista"]},
-            {"tipo": "cierre", "titulo": tit, "texto": txt, "precio": PRECIO[t], "web": web, "contacto": CONTACTO, "duracion": DUR["cierre"]}]
+            {"tipo": "cierre", "titulo": tit, "texto": txt, "precio": PRECIO[t], "web": web, "contacto": "", "duracion": DUR["cierre"]}]
     total = sum(e["duracion"] for e in esc)
     assert 23 <= total <= 27, total
     cap = "\n\n".join([h[3], BENEFICIO[t][k % len(BENEFICIO[t])], PRECIO_CAP[t], CONTACTO_CAP, TAGS[t][k % len(TAGS[t])]])
     assert len(cap) <= 2000
-    return {"tema": t, "modulo": NOMBRE[t], "musica": MUSICA[t], "duracion": round(total, 1), "escenas": esc, "caption": cap, "generado": "automatico"}
+    return {"tema": t, "modulo": NOMBRE[t], "musica": MUSICA[t], "duracion": round(total, 1), "escenas": esc, "caption": cap, "generado": "automatico-v2"}
 
 
 if __name__ == "__main__":
