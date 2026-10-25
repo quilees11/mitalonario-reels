@@ -12,7 +12,11 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 GDIR = os.path.join(BASE, "guiones")
 ORDEN = ["DeI", "DeCA", "Boveda", "Fichajes", "Soporte"]
 ORIGEN = dt.date(2026, 10, 21)          # 21/10/2026 (miércoles) = Residuos (DeI)
-DIAS_SUITE = (1, 5, 6)                   # martes, sábado, domingo
+DIAS_SUITE = (1, 5, 6)                   # martes, sábado, domingo (calendario antiguo, hasta el 25/10/2026)
+# Desde el lunes 26/10/2026: rotación diaria de 6 temas, cada día uno distinto y nunca dos días seguidos el mismo.
+# Como el ciclo es de 6 días y la semana de 7, cada semana el tema cae en un día distinto.
+ORIGEN2 = dt.date(2026, 10, 26)
+ORDEN2 = ["DeI", "DeCA", "Boveda", "Fichajes", "Soporte", "Suite"]
 DUR = {"portada": 3.4, "pantalla": 4.0, "lista": 4.8, "cierre": 5.0}
 CONTACTO = "a.esteban@mitalonario.es · WhatsApp 676 60 11 34"
 CONTACTO_CAP = "📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34"
@@ -181,13 +185,16 @@ def n_modulo(d):
 
 
 def tema(d):
+    if d >= ORIGEN2: return ORDEN2[(d - ORIGEN2).days % len(ORDEN2)]
     if d.weekday() in DIAS_SUITE: return "Suite"
     return ORDEN[n_modulo(d) % len(ORDEN)]
 
 
 def guion(d):
     t = tema(d)
-    if t == "Suite":
+    if d >= ORIGEN2:
+        k = (d - ORIGEN2).days // len(ORDEN2) + (2 if t == "Suite" else 1)   # empieza por variantes aún no usadas
+    elif t == "Suite":
         k = sum(1 for i in range((d - ORIGEN).days) if (ORIGEN + dt.timedelta(days=i)).weekday() in DIAS_SUITE)
     else:
         k = n_modulo(d) // len(ORDEN)   # vuelta número k para este módulo

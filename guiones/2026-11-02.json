@@ -1,44 +1,44 @@
 {
- "tema": "Boveda",
- "modulo": "Gestor de Contraseñas",
- "musica": "corporativa",
+ "tema": "DeCA",
+ "modulo": "Cartas de Porte (DeCA)",
+ "musica": "energica",
  "duracion": 25.2,
  "escenas": [
   {
    "tipo": "portada",
-   "titulo": "El *post-it* del monitor",
-   "texto": "Tiene los días contados",
-   "etiqueta": "PYMES",
+   "titulo": "La carta de porte, en tu *móvil*",
+   "texto": "Sin imprimir nada",
+   "etiqueta": "AUTÓNOMOS",
    "duracion": 3.4
   },
   {
    "tipo": "pantalla",
-   "captura": "boveda_lista",
-   "titulo": "Todo *en un sitio*",
-   "texto": "Ordenado y cifrado",
+   "captura": "deca_documento",
+   "titulo": "El documento *oficial*",
+   "texto": "Listo al instante",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "boveda_detalle",
-   "titulo": "Compártela *segura*",
-   "texto": "Sin WhatsApp ni papel",
+   "captura": "verificacion_qr",
+   "titulo": "Se verifica *sin login*",
+   "texto": "Solo escaneando el QR",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "boveda_maestra",
-   "titulo": "Cifrado *de extremo a extremo*",
-   "texto": "Ni nosotros podemos verlas",
+   "captura": "deca_lista",
+   "titulo": "Tu histórico *a mano*",
+   "texto": "En la nube",
    "duracion": 4.0
   },
   {
    "tipo": "lista",
-   "titulo": "Adiós a *Excel y post-its*",
+   "titulo": "Así de *fácil*",
    "puntos": [
-    "Todo cifrado",
-    "Accesible desde el móvil",
-    "Solo tú tienes la llave"
+    "Desde cualquier móvil",
+    "PDF al instante",
+    "Sin permanencia"
    ],
    "duracion": 4.8
   },
@@ -46,12 +46,12 @@
    "tipo": "cierre",
    "titulo": "*15 días gratis*",
    "texto": "Sin tarjeta. Sin permanencia.",
-   "precio": "Gestor de Contraseñas · 14,99 €/mes + IVA",
+   "precio": "Cartas de Porte · 14,99 €/mes + IVA",
    "web": "mitalonario.es",
    "contacto": "",
    "duracion": 5.0
   }
  ],
- "caption": "Ese post-it con la contraseña del banco… 🟨\n\nDeja de guardar claves en Excel, papel o el navegador. Copia y comparte contraseñas de forma segura, sin enviarlas por WhatsApp.\n\n💶 Gestor de Contraseñas: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#contraseñas #ciberseguridad #empresas #proteccióndedatos #negocios #pymes #mitalonario",
+ "caption": "La carta de porte, en tu móvil 📲\n\nLa carta de porte tiene que ser digital en el transporte público de mercancías, con multas de 401 a 600 €. Con Talonario la haces desde el móvil y en el control solo enseñas el QR.\n\n💶 Cartas de Porte: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#cartadeporte #DeCA #transporte #transportistas #autonomos #camioneros #mitalonario",
  "generado": "automatico-v2"
 }

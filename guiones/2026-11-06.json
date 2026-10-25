@@ -1,44 +1,45 @@
 {
- "tema": "DeI",
- "modulo": "Residuos (DeI)",
- "musica": "optimista",
+ "tema": "Suite",
+ "modulo": "Talonario (suite)",
+ "musica": "energica",
  "duracion": 25.2,
  "escenas": [
   {
    "tipo": "portada",
-   "titulo": "Cada cliente, su *carpeta*",
-   "texto": "Todos sus DeI ordenados",
-   "etiqueta": "CONTENEDORES",
+   "titulo": "Hecho para *contenedores y transporte*",
+   "texto": "Y para cualquier pyme",
+   "etiqueta": "TALONARIO",
    "duracion": 3.4
   },
   {
    "tipo": "pantalla",
-   "captura": "dei_formulario",
-   "titulo": "Eliges *obra y vertedero*",
-   "texto": "Ya guardados",
+   "captura": "suite_inicio",
+   "titulo": "Todo en *un panel*",
+   "texto": "Lo de hoy, de un vistazo",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "dei_documento",
-   "titulo": "Generas el *DeI*",
-   "texto": "Oficial y con QR",
+   "captura": "deca_documento",
+   "titulo": "Documentos *oficiales*",
+   "texto": "Con QR verificable",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "verificacion_qr",
-   "titulo": "El gestor lo *verifica*",
-   "texto": "Escaneando el QR",
+   "captura": "fichajes_movil",
+   "titulo": "Tu equipo, *conectado*",
+   "texto": "Fichan desde el móvil",
    "duracion": 4.0
   },
   {
    "tipo": "lista",
-   "titulo": "Para *contenedores*",
+   "titulo": "Con *Talonario*",
    "puntos": [
-    "DeI con QR",
-    "Más trabajo, menos oficina",
-    "Soporte directo"
+    "DeI y Cartas de Porte con QR",
+    "Fichajes de tu plantilla",
+    "Contraseñas cifradas",
+    "Desde el móvil y en la nube"
    ],
    "duracion": 4.8
   },
@@ -46,12 +47,12 @@
    "tipo": "cierre",
    "titulo": "*15 días gratis*",
    "texto": "Sin tarjeta. Sin permanencia.",
-   "precio": "Residuos (DeI) · 11,99 €/mes + IVA",
+   "precio": "Módulos desde 11,99 €/mes + IVA",
    "web": "mitalonario.es",
    "contacto": "",
    "duracion": 5.0
   }
  ],
- "caption": "Cada cliente, su carpeta 📁\n\nCon Talonario rellenas el DeI de residuos (RD 553/2020) desde el móvil, con clientes, obras, vertederos y códigos LER ya guardados. Cada cliente con su carpeta y cada documento con su QR.\n\n💶 Residuos (DeI): 11,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#residuos #rcd #contenedores #construccion #gestionderesiduos #autonomos #mitalonario",
+ "caption": "Hecho para contenedores y transporte… y para cualquier pyme 🚛\n\nEliges solo los módulos que necesitas y lo tienes todo ordenado en un panel. Hecho para empresas de contenedores y transporte, y para cualquier autónomo o pyme que quiera menos papeles.\n\n💶 Pagas solo los módulos que usas, desde 11,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#mitalonario #digitalizacion #empresas #gestion #pymes #residuos #cartadeporte",
  "generado": "automatico-v2"
 }

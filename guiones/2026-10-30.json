@@ -1,57 +1,57 @@
 {
- "tema": "DeCA",
- "modulo": "Cartas de Porte (DeCA)",
- "musica": "energica",
+ "tema": "Soporte",
+ "modulo": "Soporte Informático",
+ "musica": "corporativa",
  "duracion": 25.2,
  "escenas": [
   {
    "tipo": "portada",
-   "titulo": "*600 €* de multa en un control",
-   "texto": "¿Tu carta de porte es digital?",
-   "etiqueta": "TRANSPORTISTAS",
+   "titulo": "El ordenador falla *a la peor hora*",
+   "texto": "Y alguien lo arregla hoy",
+   "etiqueta": "PYMES",
    "duracion": 3.4
   },
   {
    "tipo": "pantalla",
-   "captura": "deca_formulario",
-   "titulo": "Lo haces en el *móvil*",
-   "texto": "En un minuto",
+   "captura": "soporte_seguridad",
+   "titulo": "Protección frente a *ransomware*",
+   "texto": "Antes de que pase",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "deca_lista",
-   "titulo": "Todas tus cartas, *numeradas*",
-   "texto": "CP-000001, CP-000002...",
+   "captura": "soporte_incidencias",
+   "titulo": "Te lo arreglo *hoy*",
+   "texto": "Sin esperas eternas",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "verificacion_qr",
-   "titulo": "Documento *íntegro*",
-   "texto": "Verificado con QR",
+   "captura": "soporte_seguridad",
+   "titulo": "Accesos y contraseñas *en orden*",
+   "texto": "Cumpliendo el RGPD",
    "duracion": 4.0
   },
   {
    "tipo": "lista",
-   "titulo": "Con *Talonario*",
+   "titulo": "Sin *sustos*",
    "puntos": [
-    "Sin imprimir",
-    "Sin contraseñas en el control",
-    "Hash de integridad"
+    "Equipos y red al día",
+    "Protección frente a ataques",
+    "Un técnico de confianza"
    ],
    "duracion": 4.8
   },
   {
    "tipo": "cierre",
-   "titulo": "*15 días gratis*",
-   "texto": "Sin tarjeta. Sin permanencia.",
-   "precio": "Cartas de Porte · 14,99 €/mes + IVA",
-   "web": "mitalonario.es",
+   "titulo": "*Hablemos*",
+   "texto": "Valoración gratis y sin compromiso",
+   "precio": "Presupuesto a medida",
+   "web": "",
    "contacto": "",
    "duracion": 5.0
   }
  ],
- "caption": "Un control y hasta 600 € de multa 😬\n\nRellenas origen, destino y mercancía, y tienes el PDF oficial con QR al instante. Queda en tu histórico y se verifica sin login.\n\n💶 Cartas de Porte: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#DeCA #cartadeporte #logistica #transporte #camion #pymes #mitalonario",
+ "caption": "Cuando el ordenador falla a la peor hora… 😩\n\nIncidencias resueltas sin esperas, equipos y red al día, protección frente a ransomware y un técnico de confianza para todo lo que tenga que ver con informática.\n\n💶 Servicio a medida: te preparo un presupuesto sin compromiso.\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#tecnico #informaticamadrid #ciberseguridad #ransomware #pymes #sistemas #madrid",
  "generado": "automatico-v2"
 }

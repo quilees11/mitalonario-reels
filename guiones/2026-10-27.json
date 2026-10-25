@@ -1,44 +1,44 @@
 {
- "tema": "Suite",
- "modulo": "Talonario (suite)",
+ "tema": "DeCA",
+ "modulo": "Cartas de Porte (DeCA)",
  "musica": "energica",
  "duracion": 25.2,
  "escenas": [
   {
    "tipo": "portada",
-   "titulo": "¿Cuántas apps usas *para todo*?",
-   "texto": "Con una te basta",
-   "etiqueta": "PYMES",
+   "titulo": "*600 €* de multa en un control",
+   "texto": "¿Tu carta de porte es digital?",
+   "etiqueta": "TRANSPORTISTAS",
    "duracion": 3.4
   },
   {
    "tipo": "pantalla",
+   "captura": "deca_formulario",
+   "titulo": "Lo haces en el *móvil*",
+   "texto": "En un minuto",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_lista",
+   "titulo": "Todas tus cartas, *numeradas*",
+   "texto": "CP-000001, CP-000002...",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
    "captura": "verificacion_qr",
-   "titulo": "Documentos *verificables*",
-   "texto": "Con su QR, sin login",
-   "duracion": 4.0
-  },
-  {
-   "tipo": "pantalla",
-   "captura": "suite_inicio",
-   "titulo": "Todo *ordenado*",
-   "texto": "En la nube",
-   "duracion": 4.0
-  },
-  {
-   "tipo": "pantalla",
-   "captura": "fichajes_panel",
-   "titulo": "Tu plantilla, *bajo control*",
-   "texto": "En tiempo real",
+   "titulo": "Documento *íntegro*",
+   "texto": "Verificado con QR",
    "duracion": 4.0
   },
   {
    "tipo": "lista",
-   "titulo": "Hecho *para ti*",
+   "titulo": "Con *Talonario*",
    "puntos": [
-    "Contenedores y transporte",
-    "Autónomos y pymes",
-    "Listo ante inspecciones"
+    "Sin imprimir",
+    "Sin contraseñas en el control",
+    "Hash de integridad"
    ],
    "duracion": 4.8
   },
@@ -46,12 +46,12 @@
    "tipo": "cierre",
    "titulo": "*15 días gratis*",
    "texto": "Sin tarjeta. Sin permanencia.",
-   "precio": "Módulos desde 11,99 €/mes + IVA",
+   "precio": "Cartas de Porte · 14,99 €/mes + IVA",
    "web": "mitalonario.es",
    "contacto": "",
    "duracion": 5.0
   }
  ],
- "caption": "¿Cuántas aplicaciones usas para llevar tu negocio? 🤯\n\nTalonario reúne en una sola app los documentos que te exige la normativa (DeI de residuos y cartas de porte con QR), el registro de jornada de tu equipo y un gestor de contraseñas cifrado. Desde el móvil, en la nube y sin permanencia.\n\n💶 Pagas solo los módulos que usas, desde 11,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#mitalonario #pymes #autonomos #transporte #contenedores #digitalizacion #software",
+ "caption": "Un control y hasta 600 € de multa 😬\n\nRellenas origen, destino y mercancía, y tienes el PDF oficial con QR al instante. Queda en tu histórico y se verifica sin login.\n\n💶 Cartas de Porte: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#DeCA #cartadeporte #logistica #transporte #camion #pymes #mitalonario",
  "generado": "automatico-v2"
 }

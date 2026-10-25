@@ -1,58 +1,57 @@
 {
- "tema": "Soporte",
- "modulo": "Soporte Informático",
+ "tema": "Boveda",
+ "modulo": "Gestor de Contraseñas",
  "musica": "corporativa",
  "duracion": 25.2,
  "escenas": [
   {
    "tipo": "portada",
-   "titulo": "¿Sin *informático* en tu empresa?",
-   "texto": "Yo me encargo",
-   "etiqueta": "SOPORTE INFORMÁTICO",
+   "titulo": "El *post-it* del monitor",
+   "texto": "Tiene los días contados",
+   "etiqueta": "PYMES",
    "duracion": 3.4
   },
   {
    "tipo": "pantalla",
-   "captura": "soporte_incidencias",
-   "titulo": "Incidencias *resueltas*",
-   "texto": "Remoto o presencial",
+   "captura": "boveda_lista",
+   "titulo": "Todo *en un sitio*",
+   "texto": "Ordenado y cifrado",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "soporte_seguridad",
-   "titulo": "Tu seguridad, *revisada*",
-   "texto": "Equipos, red y accesos",
+   "captura": "boveda_detalle",
+   "titulo": "Compártela *segura*",
+   "texto": "Sin WhatsApp ni papel",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "soporte_incidencias",
-   "titulo": "Un solo *interlocutor*",
-   "texto": "Para toda tu tecnología",
+   "captura": "boveda_maestra",
+   "titulo": "Cifrado *de extremo a extremo*",
+   "texto": "Ni nosotros podemos verlas",
    "duracion": 4.0
   },
   {
    "tipo": "lista",
-   "titulo": "Te *ayudo* con",
+   "titulo": "Adiós a *Excel y post-its*",
    "puntos": [
-    "Soporte remoto y presencial",
-    "Sistemas y ciberseguridad",
-    "Consultoría IT",
-    "Para autónomos y pymes"
+    "Todo cifrado",
+    "Accesible desde el móvil",
+    "Solo tú tienes la llave"
    ],
    "duracion": 4.8
   },
   {
    "tipo": "cierre",
-   "titulo": "*Hablemos*",
-   "texto": "Valoración gratis y sin compromiso",
-   "precio": "Presupuesto a medida",
-   "web": "",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Gestor de Contraseñas · 14,99 €/mes + IVA",
+   "web": "mitalonario.es",
    "contacto": "",
    "duracion": 5.0
   }
  ],
- "caption": "¿Tu empresa no tiene informático? Yo me encargo 💻\n\nSoy Adrián Esteban y ayudo a autónomos y pymes con su tecnología: soporte remoto y presencial, administración de sistemas y ciberseguridad, y consultoría IT.\n\n💶 Servicio a medida: te preparo un presupuesto sin compromiso.\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#soporteinformatico #informatica #ciberseguridad #pymes #autonomos #consultoriait #madrid",
+ "caption": "Ese post-it con la contraseña del banco… 🟨\n\nDeja de guardar claves en Excel, papel o el navegador. Copia y comparte contraseñas de forma segura, sin enviarlas por WhatsApp.\n\n💶 Gestor de Contraseñas: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#contraseñas #ciberseguridad #empresas #proteccióndedatos #negocios #pymes #mitalonario",
  "generado": "automatico-v2"
 }

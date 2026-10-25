@@ -6,39 +6,40 @@
  "escenas": [
   {
    "tipo": "portada",
-   "titulo": "El ordenador falla *a la peor hora*",
-   "texto": "Y alguien lo arregla hoy",
-   "etiqueta": "PYMES",
+   "titulo": "¿Estás protegido del *ransomware*?",
+   "texto": "Revisamos tu seguridad",
+   "etiqueta": "CIBERSEGURIDAD",
    "duracion": 3.4
   },
   {
    "tipo": "pantalla",
+   "captura": "soporte_incidencias",
+   "titulo": "Incidencias *resueltas*",
+   "texto": "Remoto o presencial",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
    "captura": "soporte_seguridad",
-   "titulo": "Protección frente a *ransomware*",
-   "texto": "Antes de que pase",
+   "titulo": "Tu seguridad, *revisada*",
+   "texto": "Equipos, red y accesos",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
    "captura": "soporte_incidencias",
-   "titulo": "Te lo arreglo *hoy*",
-   "texto": "Sin esperas eternas",
-   "duracion": 4.0
-  },
-  {
-   "tipo": "pantalla",
-   "captura": "soporte_seguridad",
-   "titulo": "Accesos y contraseñas *en orden*",
-   "texto": "Cumpliendo el RGPD",
+   "titulo": "Un solo *interlocutor*",
+   "texto": "Para toda tu tecnología",
    "duracion": 4.0
   },
   {
    "tipo": "lista",
-   "titulo": "Sin *sustos*",
+   "titulo": "Te *ayudo* con",
    "puntos": [
-    "Equipos y red al día",
-    "Protección frente a ataques",
-    "Un técnico de confianza"
+    "Soporte remoto y presencial",
+    "Sistemas y ciberseguridad",
+    "Consultoría IT",
+    "Para autónomos y pymes"
    ],
    "duracion": 4.8
   },
@@ -52,6 +53,6 @@
    "duracion": 5.0
   }
  ],
- "caption": "Cuando el ordenador falla a la peor hora… 😩\n\nIncidencias resueltas sin esperas, equipos y red al día, protección frente a ransomware y un técnico de confianza para todo lo que tenga que ver con informática.\n\n💶 Servicio a medida: te preparo un presupuesto sin compromiso.\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#tecnico #informaticamadrid #ciberseguridad #ransomware #pymes #sistemas #madrid",
+ "caption": "¿Tu negocio está protegido frente al ransomware? 🛡️\n\nSoy Adrián Esteban y ayudo a autónomos y pymes con su tecnología: soporte remoto y presencial, administración de sistemas y ciberseguridad, y consultoría IT.\n\n💶 Servicio a medida: te preparo un presupuesto sin compromiso.\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#soporteinformatico #informatica #ciberseguridad #pymes #autonomos #consultoriait #madrid",
  "generado": "automatico-v2"
 }
