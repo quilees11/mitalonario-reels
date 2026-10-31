@@ -1,0 +1,57 @@
+{
+ "tema": "DeCA",
+ "modulo": "Cartas de Porte (DeCA)",
+ "musica": "energica",
+ "duracion": 25.2,
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Cero papeles en la *guantera*",
+   "texto": "La carta de porte va en el móvil",
+   "etiqueta": "CAMIONEROS",
+   "duracion": 3.4
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_formulario",
+   "titulo": "Lo haces en el *móvil*",
+   "texto": "En un minuto",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "deca_lista",
+   "titulo": "Todas tus cartas, *numeradas*",
+   "texto": "CP-000001, CP-000002...",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "verificacion_qr",
+   "titulo": "Documento *íntegro*",
+   "texto": "Verificado con QR",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Con *Talonario*",
+   "puntos": [
+    "Sin imprimir",
+    "Sin contraseñas en el control",
+    "Hash de integridad"
+   ],
+   "duracion": 4.8
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Cartas de Porte · 14,99 €/mes + IVA",
+   "web": "mitalonario.es",
+   "contacto": "",
+   "duracion": 5.0
+  }
+ ],
+ "caption": "Cero papeles en la guantera 🙌\n\nLa carta de porte tiene que ser digital en el transporte público de mercancías, con multas de 401 a 600 €. Con Talonario la haces desde el móvil y en el control solo enseñas el QR.\n\n💶 Cartas de Porte: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#cartadeporte #DeCA #transporte #transportistas #autonomos #camioneros #mitalonario",
+ "generado": "automatico-v2"
+}
