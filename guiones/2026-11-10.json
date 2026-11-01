@@ -6,40 +6,39 @@
  "escenas": [
   {
    "tipo": "portada",
-   "titulo": "Adiós al *reloj de fichar*",
-   "texto": "Y a las hojas que se pierden",
-   "etiqueta": "HOSTELERÍA · COMERCIO",
+   "titulo": "El registro, *en un clic*",
+   "texto": "Listo para la inspección",
+   "etiqueta": "PYMES",
    "duracion": 3.4
   },
   {
    "tipo": "pantalla",
-   "captura": "fichajes_movil",
-   "titulo": "Fichan *desde el móvil*",
-   "texto": "Entrada, pausas y salida",
+   "captura": "fichajes_panel",
+   "titulo": "¿Quién está *trabajando*?",
+   "texto": "En tiempo real",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "fichajes_panel",
-   "titulo": "Tú lo ves *al momento*",
-   "texto": "Toda la plantilla",
+   "captura": "fichajes_movil",
+   "titulo": "Cada empleado, *su portal*",
+   "texto": "Con su propio acceso",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
    "captura": "fichajes_informe",
-   "titulo": "Registro *listo*",
-   "texto": "Para la inspección",
+   "titulo": "Informe *mensual*",
+   "texto": "Por empleado",
    "duracion": 4.0
   },
   {
    "tipo": "lista",
-   "titulo": "Con el *Sistema de Fichajes*",
+   "titulo": "Para *tu plantilla*",
    "puntos": [
-    "Cumples el registro de jornada",
-    "Fichaje desde el móvil",
-    "Portal del empleado",
-    "Sin permanencia"
+    "Oficina, obra o reparto",
+    "Informes por empleado",
+    "Listo ante una inspección"
    ],
    "duracion": 4.8
   },
@@ -53,6 +52,7 @@
    "duracion": 5.0
   }
  ],
- "caption": "Adiós al reloj de fichar y a las hojas de firmas 👋\n\nCada empleado tiene su propio portal para fichar entrada, pausas y salida. Tú ves las horas de toda la plantilla y sacas el registro mensual en un clic.\n\n💶 Sistema de Fichajes: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#fichaje #registrohorario #inspecciondetrabajo #autonomos #pymes #recursoshumanos #mitalonario",
- "generado": "automatico-v2"
+ "caption": "El registro de jornada del mes, en un clic 📊\n\nCada empleado tiene su propio portal para fichar entrada, pausas y salida. Tú ves las horas de toda la plantilla y sacas el registro mensual en un clic.\n\n💶 Sistema de Fichajes: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#fichaje #registrohorario #inspecciondetrabajo #autonomos #pymes #recursoshumanos #mitalonario",
+ "generado": "automatico-v2",
+ "franja": "mañana"
 }

@@ -1,58 +1,59 @@
 {
- "tema": "DeCA",
- "modulo": "Cartas de Porte (DeCA)",
- "musica": "energica",
+ "tema": "Soporte",
+ "modulo": "Soporte Informático",
+ "musica": "corporativa",
  "duracion": 25.2,
  "escenas": [
   {
    "tipo": "portada",
-   "titulo": "El agente te pide la *carta de porte*",
-   "texto": "Tú le enseñas un QR",
-   "etiqueta": "TRANSPORTISTAS",
+   "titulo": "Ordenador *lento*",
+   "texto": "No siempre hay que cambiarlo",
+   "etiqueta": "SOPORTE INFORMÁTICO",
    "duracion": 3.4
   },
   {
    "tipo": "pantalla",
-   "captura": "deca_formulario",
-   "titulo": "Rellenas *origen y destino*",
-   "texto": "Y la mercancía",
+   "captura": "soporte_incidencias",
+   "titulo": "Incidencias *resueltas*",
+   "texto": "Remoto o presencial",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "deca_documento",
-   "titulo": "PDF oficial con *QR*",
-   "texto": "Orden FOM/2861/2012",
+   "captura": "soporte_seguridad",
+   "titulo": "Tu seguridad, *revisada*",
+   "texto": "Equipos, red y accesos",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "verificacion_qr",
-   "titulo": "En el control, *el QR*",
-   "texto": "Sin contraseñas",
+   "captura": "soporte_incidencias",
+   "titulo": "Un solo *interlocutor*",
+   "texto": "Para toda tu tecnología",
    "duracion": 4.0
   },
   {
    "tipo": "lista",
-   "titulo": "Evita multas de *401 a 600 €*",
+   "titulo": "Te *ayudo* con",
    "puntos": [
-    "Todo en la nube",
-    "Documentos ilimitados",
-    "Verificación por QR",
-    "Sin permanencia"
+    "Soporte remoto y presencial",
+    "Sistemas y ciberseguridad",
+    "Consultoría IT",
+    "Para autónomos y pymes"
    ],
    "duracion": 4.8
   },
   {
    "tipo": "cierre",
-   "titulo": "*15 días gratis*",
-   "texto": "Sin tarjeta. Sin permanencia.",
-   "precio": "Cartas de Porte · 14,99 €/mes + IVA",
-   "web": "mitalonario.es",
+   "titulo": "*Hablemos*",
+   "texto": "Valoración gratis y sin compromiso",
+   "precio": "Presupuesto a medida",
+   "web": "",
    "contacto": "",
    "duracion": 5.0
   }
  ],
- "caption": "El agente te pide la carta de porte… y tú le enseñas un QR 👮\n\nRellenas origen, destino y mercancía, y tienes el PDF oficial con QR al instante. Queda en tu histórico y se verifica sin login.\n\n💶 Cartas de Porte: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#DeCA #cartadeporte #logistica #transporte #camion #pymes #mitalonario",
- "generado": "automatico-v2"
+ "caption": "¿Ordenador lento? No siempre hay que comprar otro 🐢\n\nSoy Adrián Esteban y ayudo a autónomos y pymes con su tecnología: soporte remoto y presencial, administración de sistemas y ciberseguridad, y consultoría IT.\n\n💶 Servicio a medida: te preparo un presupuesto sin compromiso.\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#soporteinformatico #informatica #ciberseguridad #pymes #autonomos #consultoriait #madrid",
+ "generado": "automatico-v2",
+ "franja": "mañana"
 }

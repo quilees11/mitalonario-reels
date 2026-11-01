@@ -1,44 +1,44 @@
 {
- "tema": "DeCA",
- "modulo": "Cartas de Porte (DeCA)",
- "musica": "energica",
+ "tema": "Fichajes",
+ "modulo": "Sistema de Fichajes",
+ "musica": "optimista",
  "duracion": 25.2,
  "escenas": [
   {
    "tipo": "portada",
-   "titulo": "La carta de porte, en tu *móvil*",
-   "texto": "Sin imprimir nada",
-   "etiqueta": "AUTÓNOMOS",
+   "titulo": "Multa de hasta *7.500 €*",
+   "texto": "Por no registrar la jornada",
+   "etiqueta": "EMPRESAS",
    "duracion": 3.4
   },
   {
    "tipo": "pantalla",
-   "captura": "deca_documento",
-   "titulo": "El documento *oficial*",
-   "texto": "Listo al instante",
+   "captura": "fichajes_movil",
+   "titulo": "Fichan *desde el móvil*",
+   "texto": "Entrada, pausas y salida",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "verificacion_qr",
-   "titulo": "Se verifica *sin login*",
-   "texto": "Solo escaneando el QR",
+   "captura": "fichajes_panel",
+   "titulo": "Tú lo ves *al momento*",
+   "texto": "Toda la plantilla",
    "duracion": 4.0
   },
   {
    "tipo": "pantalla",
-   "captura": "deca_lista",
-   "titulo": "Tu histórico *a mano*",
-   "texto": "En la nube",
+   "captura": "fichajes_informe",
+   "titulo": "Registro *listo*",
+   "texto": "Para la inspección",
    "duracion": 4.0
   },
   {
    "tipo": "lista",
-   "titulo": "Así de *fácil*",
+   "titulo": "Para *tu plantilla*",
    "puntos": [
-    "Desde cualquier móvil",
-    "PDF al instante",
-    "Sin permanencia"
+    "Oficina, obra o reparto",
+    "Informes por empleado",
+    "Listo ante una inspección"
    ],
    "duracion": 4.8
   },
@@ -46,12 +46,13 @@
    "tipo": "cierre",
    "titulo": "*15 días gratis*",
    "texto": "Sin tarjeta. Sin permanencia.",
-   "precio": "Cartas de Porte · 14,99 €/mes + IVA",
+   "precio": "Sistema de Fichajes · 14,99 €/mes + IVA",
    "web": "mitalonario.es",
    "contacto": "",
    "duracion": 5.0
   }
  ],
- "caption": "La carta de porte, en tu móvil 📲\n\nLa carta de porte tiene que ser digital en el transporte público de mercancías, con multas de 401 a 600 €. Con Talonario la haces desde el móvil y en el control solo enseñas el QR.\n\n💶 Cartas de Porte: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#cartadeporte #DeCA #transporte #transportistas #autonomos #camioneros #mitalonario",
- "generado": "automatico-v2"
+ "caption": "No registrar la jornada puede costar hasta 7.500 € de multa ⚠️\n\nEl registro de jornada es obligatorio para cualquier empresa con empleados y no tenerlo puede acabar en multa de la Inspección de Trabajo. Con el Sistema de Fichajes de Talonario tu equipo ficha desde el móvil y tú lo controlas todo.\n\n💶 Sistema de Fichajes: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#registrodejornada #fichajes #controlhorario #rrhh #pymes #empresas #mitalonario",
+ "generado": "automatico-v2",
+ "franja": "mañana"
 }

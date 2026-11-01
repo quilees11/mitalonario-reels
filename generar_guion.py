@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Genera guiones/AAAA-MM-DD.json para los próximos días que no tengan guion: UN reel diario.
+"""Genera los guiones de los próximos días que no tengan guion.
+DESDE EL 02/11/2026: DOS reels al día, guiones/AAAA-MM-DD.json (mañana) y AAAA-MM-DD-2.json (tarde), con foco en
+Sistema de Fichajes, Soporte Informático y Gestor de Contraseñas (ver SEQ3). Lo de abajo es el calendario anterior:
+Antes: UN reel diario.
 Martes, sábado y domingo: reel de la suite Talonario (qué hace y sus ventajas, sin un módulo concreto).
 Lunes, miércoles, jueves y viernes: un módulo por día, rotando en este orden: Residuos (DeI) · Cartas de Porte (DeCA) ·
 Gestor de Contraseñas · Sistema de Fichajes · Soporte Informático. Dentro de cada módulo rota ganchos, pantallas y ventajas
@@ -179,6 +182,56 @@ MUSICA = {"Suite": "energica", "DeI": "optimista", "DeCA": "energica", "Boveda":
 NOMBRE = {"DeI": "Residuos (DeI)", "DeCA": "Cartas de Porte (DeCA)", "Boveda": "Gestor de Contraseñas", "Fichajes": "Sistema de Fichajes", "Soporte": "Soporte Informático", "Suite": "Talonario (suite)"}
 
 
+# ---- Ampliación 01/11/2026: foco en Soporte Informático, Gestor de Contraseñas y Sistema de Fichajes ----
+HOOKS["Boveda"] += [
+ ("¿Tu clave es *123456*?", "Es la primera que prueban", "CIBERSEGURIDAD", "¿Tu contraseña es 123456? Es la primera que prueban 😬"),
+ ("La misma clave *para todo*", "Si cae una, caen todas", "PYMES", "¿Usas la misma contraseña para todo? Si cae una, caen todas 🔓"),
+ ("¿Dónde apuntas las *claves*?", "En un post-it no", "AUTÓNOMOS", "¿Dónde apuntas las contraseñas de tu negocio? 📝"),
+ ("El Excel de *contraseñas*", "El primer archivo que roban", "EMPRESAS", "Ese Excel con todas las contraseñas… es lo primero que buscan 🎯"),
+ ("Hacienda, banco y *correo*", "Todas en un sitio seguro", "AUTÓNOMOS", "Hacienda, banco, correo… todas tus claves en un sitio seguro 🏦"),
+ ("Ni nosotros *podemos verlas*", "Cifrado de extremo a extremo", "SEGURIDAD", "Tus contraseñas cifradas: ni nosotros podemos verlas 🔐"),
+]
+HOOKS["Fichajes"] += [
+ ("Multa de hasta *7.500 €*", "Por no registrar la jornada", "EMPRESAS", "No registrar la jornada puede costar hasta 7.500 € de multa ⚠️"),
+ ("¿Horas extra *sin control*?", "Cada minuto, registrado", "PYMES", "¿Sabes cuántas horas extra hace tu equipo? ⏰"),
+ ("Vacaciones *sin líos*", "Las piden desde el móvil", "RRHH", "Vacaciones y ausencias sin papeles ni WhatsApps 🌴"),
+ ("Fichar con *ubicación*", "Sabes desde dónde fichan", "OBRAS · REPARTO", "Fichajes con ubicación para equipos que trabajan fuera 📍"),
+ ("El registro, *en un clic*", "Listo para la inspección", "PYMES", "El registro de jornada del mes, en un clic 📊"),
+ ("Hostelería: *turnos claros*", "Entradas, pausas y salidas", "HOSTELERÍA", "Bares y restaurantes: turnos claros sin hojas de firmas 🍽️"),
+]
+HOOKS["Soporte"] += [
+ ("¿Y si mañana *te hackean*?", "Mejor prevenir que lamentar", "CIBERSEGURIDAD", "¿Qué pasaría si mañana te hackean el correo de la empresa? 🛑"),
+ ("Un correo *falso* y adiós", "Forma a tu equipo", "CIBERSEGURIDAD", "Un solo correo falso puede parar tu empresa 🎣"),
+ ("¿Wifi de *invitados*?", "Separada de tu red", "PYMES", "¿Tus clientes se conectan a la misma wifi que tus ordenadores? 📶"),
+ ("Ordenador *lento*", "No siempre hay que cambiarlo", "SOPORTE INFORMÁTICO", "¿Ordenador lento? No siempre hay que comprar otro 🐢"),
+ ("¿Cumples el *RGPD*?", "Accesos, copias y contraseñas", "PROTECCIÓN DE DATOS", "¿Tu negocio cumple el RGPD con los datos de tus clientes? 📂"),
+ ("Clínicas y *gestorías*", "Datos sensibles, bien protegidos", "SECTORES", "Clínicas, gestorías y despachos: tus datos, bien protegidos 🩺"),
+]
+SCREENS["Soporte"].append(
+  [("soporte_incidencias", "Me escribes y *lo vemos*", "Remoto en minutos"), ("soporte_seguridad", "Antivirus, red y *accesos*", "Revisados"), ("soporte_seguridad", "Tu equipo, *formado*", "Contra el phishing")])
+LISTAS["Boveda"].append(("Sin *contraseñas débiles*", ["Una maestra fuerte", "Claves únicas por servicio", "Cifradas en tu navegador"]))
+LISTAS["Fichajes"].append(("Todo *incluido*", ["Vacaciones y ausencias", "Ubicación opcional", "Informe CSV mensual", "15 días gratis"]))
+LISTAS["Soporte"].append(("Para *tu negocio*", ["Clínicas y gestorías", "Comercios y talleres", "Oficinas de 3 a 50 personas"]))
+BENEFICIO["Boveda"].append("Usuario, contraseña y web de cada servicio en una ficha cifrada. Una sola contraseña maestra que solo conoces tú, y todo accesible desde el móvil o el ordenador.")
+BENEFICIO["Fichajes"].append("Tu equipo pide vacaciones y ausencias desde el móvil, tú las apruebas en un clic y el informe mensual sale solo. Funciona en oficina, en obra o en reparto.")
+BENEFICIO["Soporte"].append("Reviso tus equipos, antivirus, red, accesos y contraseñas, y te dejo un plan claro para que un fallo o un ataque no paren tu negocio. Primera valoración gratis.")
+TAGS["Boveda"].append("#gestordecontraseñas #ciberseguridadpymes #seguridad #contraseñasseguras #autonomos #empresas #mitalonario")
+TAGS["Fichajes"].append("#controldehorario #registrodejornada #hosteleria #construccion #pymes #empleados #mitalonario")
+TAGS["Soporte"].append("#informatico #soportetecnico #ciberseguridad #rgpd #pymesmadrid #autonomos #tecnologia")
+
+# Desde el lunes 02/11/2026: DOS reels al día (mañana y tarde), con foco en Fichajes, Soporte y Contraseñas.
+# Ciclo de 8 franjas (4 días): Fichajes · Soporte | Contraseñas · Cartas de Porte | Soporte · Fichajes | (Residuos o Suite) · Contraseñas
+# => en 4 días: 2 Fichajes, 2 Soporte, 2 Contraseñas, 1 Cartas de Porte y 1 Residuos/Suite alternando. Nunca el mismo tema dos franjas seguidas.
+ORIGEN3 = dt.date(2026, 11, 2)
+SEQ3 = ["Fichajes", "Soporte", "Boveda", "DeCA", "Soporte", "Fichajes", "X", "Boveda"]
+OFF3 = {"Fichajes": 6, "Soporte": 6, "Boveda": 6, "DeCA": 2, "DeI": 2, "Suite": 4}   # empieza por variantes nuevas
+
+
+def tema3(n):
+    c, i = divmod(n, len(SEQ3)); t = SEQ3[i]
+    return ("DeI", "Suite")[c % 2] if t == "X" else t
+
+
 def n_modulo(d):
     """Cuántos días de módulo (no de suite) hay desde ORIGEN hasta d, sin contar d."""
     return sum(1 for i in range((d - ORIGEN).days) if (ORIGEN + dt.timedelta(days=i)).weekday() not in DIAS_SUITE)
@@ -190,9 +243,15 @@ def tema(d):
     return ORDEN[n_modulo(d) % len(ORDEN)]
 
 
-def guion(d):
-    t = tema(d)
-    if d >= ORIGEN2:
+def guion(d, franja=0):
+    if d >= ORIGEN3:
+        n = 2 * (d - ORIGEN3).days + franja; t = tema3(n)
+        k = sum(1 for j in range(n) if tema3(j) == t) + OFF3[t]
+    else:
+        t = tema(d)
+    if d >= ORIGEN3:
+        pass
+    elif d >= ORIGEN2:
         k = (d - ORIGEN2).days // len(ORDEN2) + (2 if t == "Suite" else 1)   # empieza por variantes aún no usadas
     elif t == "Suite":
         k = sum(1 for i in range((d - ORIGEN).days) if (ORIGEN + dt.timedelta(days=i)).weekday() in DIAS_SUITE)
@@ -210,7 +269,9 @@ def guion(d):
     assert 23 <= total <= 27, total
     cap = "\n\n".join([h[3], BENEFICIO[t][k % len(BENEFICIO[t])], PRECIO_CAP[t], CONTACTO_CAP, TAGS[t][k % len(TAGS[t])]])
     assert len(cap) <= 2000
-    return {"tema": t, "modulo": NOMBRE[t], "musica": MUSICA[t], "duracion": round(total, 1), "escenas": esc, "caption": cap, "generado": "automatico-v2"}
+    out = {"tema": t, "modulo": NOMBRE[t], "musica": MUSICA[t], "duracion": round(total, 1), "escenas": esc, "caption": cap, "generado": "automatico-v2"}
+    if d >= ORIGEN3: out["franja"] = ("mañana", "tarde")[franja]
+    return out
 
 
 if __name__ == "__main__":
@@ -219,7 +280,9 @@ if __name__ == "__main__":
     for i in range(dias + 1):
         d = hoy + dt.timedelta(days=i)
         if d < ORIGEN: continue
-        f = os.path.join(GDIR, f"{d.isoformat()}.json")
-        if os.path.exists(f): continue
-        json.dump(guion(d), open(f, "w"), ensure_ascii=False, indent=1)
-        print("Guion nuevo:", d, tema(d))
+        for franja in ((0, 1) if d >= ORIGEN3 else (0,)):
+            f = os.path.join(GDIR, f"{d.isoformat()}{'-2' if franja else ''}.json")
+            if os.path.exists(f): continue
+            g = guion(d, franja)
+            json.dump(g, open(f, "w"), ensure_ascii=False, indent=1)
+            print("Guion nuevo:", os.path.basename(f), g["tema"])
