@@ -1,0 +1,58 @@
+{
+ "tema": "Soporte",
+ "modulo": "Soporte Informático",
+ "musica": "corporativa",
+ "duracion": 25.2,
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "¿Estás protegido del *ransomware*?",
+   "texto": "Revisamos tu seguridad",
+   "etiqueta": "CIBERSEGURIDAD",
+   "duracion": 3.4
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "soporte_incidencias",
+   "titulo": "Me escribes y *lo vemos*",
+   "texto": "Remoto en minutos",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "soporte_seguridad",
+   "titulo": "Antivirus, red y *accesos*",
+   "texto": "Revisados",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "soporte_seguridad",
+   "titulo": "Tu equipo, *formado*",
+   "texto": "Contra el phishing",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Para *tu negocio*",
+   "puntos": [
+    "Clínicas y gestorías",
+    "Comercios y talleres",
+    "Oficinas de 3 a 50 personas"
+   ],
+   "duracion": 4.8
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*Hablemos*",
+   "texto": "Valoración gratis y sin compromiso",
+   "precio": "Presupuesto a medida",
+   "web": "",
+   "contacto": "",
+   "duracion": 5.0
+  }
+ ],
+ "caption": "¿Tu negocio está protegido frente al ransomware? 🛡️\n\nReviso tus equipos, antivirus, red, accesos y contraseñas, y te dejo un plan claro para que un fallo o un ataque no paren tu negocio. Primera valoración gratis.\n\n💶 Servicio a medida: te preparo un presupuesto sin compromiso.\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#informatico #soportetecnico #ciberseguridad #rgpd #pymesmadrid #autonomos #tecnologia",
+ "generado": "automatico-v2",
+ "franja": "tarde"
+}
