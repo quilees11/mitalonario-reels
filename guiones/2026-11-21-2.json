@@ -1,0 +1,58 @@
+{
+ "tema": "Boveda",
+ "modulo": "Gestor de Contraseñas",
+ "musica": "corporativa",
+ "duracion": 25.2,
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Todas tus claves, *bajo llave*",
+   "texto": "Cifradas de extremo a extremo",
+   "etiqueta": "SEGURIDAD",
+   "duracion": 3.4
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "boveda_maestra",
+   "titulo": "Solo tú tienes *la llave*",
+   "texto": "Una contraseña maestra",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "boveda_lista",
+   "titulo": "Todas tus *claves*",
+   "texto": "Banco, Hacienda, correo...",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "pantalla",
+   "captura": "boveda_detalle",
+   "titulo": "Copias y *listo*",
+   "texto": "Sin verla en pantalla",
+   "duracion": 4.0
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Sin *contraseñas débiles*",
+   "puntos": [
+    "Una maestra fuerte",
+    "Claves únicas por servicio",
+    "Cifradas en tu navegador"
+   ],
+   "duracion": 4.8
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "*15 días gratis*",
+   "texto": "Sin tarjeta. Sin permanencia.",
+   "precio": "Gestor de Contraseñas · 14,99 €/mes + IVA",
+   "web": "mitalonario.es",
+   "contacto": "",
+   "duracion": 5.0
+  }
+ ],
+ "caption": "Todas las claves de tu negocio, bajo llave 🔐\n\nGuarda todas las contraseñas de tu negocio (banco, Hacienda, correo, proveedores, redes) en una bóveda cifrada de extremo a extremo. Solo tú tienes la llave: ni nosotros podemos verlas.\n\n💶 Gestor de Contraseñas: 14,99 €/mes + IVA · 15 días gratis en mitalonario.es\n\n📩 a.esteban@mitalonario.es\n📱 WhatsApp 676 60 11 34\n\n#ciberseguridad #contraseñas #gestordecontraseñas #pymes #autonomos #seguridadinformatica #mitalonario",
+ "generado": "automatico-v2",
+ "franja": "tarde"
+}
